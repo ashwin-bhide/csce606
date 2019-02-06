@@ -28,7 +28,7 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  #Using regex and i for ignore case
+  #Using regex to check for a letter comsonant and i for ignore case
   if(s=~ /\A(?=[^aeiou])(?=[a-z])/i)
     return true
   else
@@ -38,6 +38,7 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
+  # Regex to check if string is binary(only 0s and 1s) and then convert it to integer and take modulus by 4
   if(s.to_s =~ /\b[01]+\b/ && s.to_i % 4 == 0)
 		return true
 	else
