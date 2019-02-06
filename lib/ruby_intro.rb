@@ -48,6 +48,7 @@ end
 # Part 3
 class BookInStock
 # YOUR CODE HERE
+#Throw error if isbn is empty or price is less than zero
   attr_accessor :isbn, :price
   def initialize(isbn, price)
     raise ArgumentError if isbn.empty? || price <= 0
